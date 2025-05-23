@@ -114,10 +114,6 @@ public class Arbol {
         System.out.println();
     }
 
-
-    /**
-     * TODO estudiantes
-     */
     public Arbol(int[][] datosSalas) {
         if (datosSalas.length == 0) return;
         NodoArbol[] nodos = new NodoArbol[datosSalas.length];
@@ -137,9 +133,6 @@ public class Arbol {
         raiz = nodos[0];
     }
 
-    /**
-     * TODO estudiantes
-     */
     public String rutaMejorTesoro() {
         return rutaMejorTesoroRec(raiz, "", 0).ruta;
     }
@@ -175,9 +168,6 @@ public class Arbol {
         return (izq.valor >= der.valor) ? izq : der;
     }
 
-    /**
-     * TODO estudiantes
-     */
     public String rutaMasFacil() {
         ResultadoFacil resultado = new ResultadoFacil("", Integer.MAX_VALUE);
         rutaMasFacilRec(raiz, "", 0, 0, resultado, 0);
@@ -224,18 +214,12 @@ public class Arbol {
     }
 
 
-    /**
-     * TODO estudiantes
-     */
     public DiccionarioABB getMonstruos() {
         DiccionarioABB diccionario = new DiccionarioABB();
         almacenarEnDiccionario(raiz, diccionario, true);
         return diccionario;
     }
 
-    /**
-     * TODO estudiantes
-     */
     public DiccionarioABB getTesoros() {
         DiccionarioABB diccionario = new DiccionarioABB();
         almacenarEnDiccionario(raiz, diccionario, false);

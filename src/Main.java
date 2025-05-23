@@ -1,7 +1,4 @@
-import java.io.File;
-
 import mazmorra.Arbol;
-import mazmorra.Sala;
 import mazmorra.DiccionarioABB;
 
 public class Main {

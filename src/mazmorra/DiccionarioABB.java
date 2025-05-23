@@ -120,10 +120,6 @@ public class DiccionarioABB {
 		return resultado;
 	}
 
-
-	/**
-	 * TODO estudiantes
-	 */
 	public void mostrar2D() {
 		mostrar2DRec(raiz, 0);
 	}
@@ -136,9 +132,6 @@ public class DiccionarioABB {
 		mostrar2DRec(nodo.getIzquierdo(), espacio);
 	}
 
-	/**
-	 * TODO estudiantes
-	 */
 	public DiccionarioABB[] partir(int clave) {
 		DiccionarioABB menor = new DiccionarioABB();
 		DiccionarioABB mayor = new DiccionarioABB();
